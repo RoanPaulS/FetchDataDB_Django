@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <title>Document</title>
+</head>
+<body>
+{% block content %}
+
+    <h1>List of employees</h1>
+
+    {% for list in employee %}
+
+    <h4>{{list.name}}</h4>
+    <h4>{{list.email}}</h4>
+
+    {% endfor %}
+
+
+{% endblock %}
+</body>
+</html>
